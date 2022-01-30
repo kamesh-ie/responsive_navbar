@@ -1,0 +1,51 @@
+body{
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.navbar .logo{
+    text-align: center;
+    flex-basis: 25%;
+}
+.navbar .contents{
+    flex-basis: 75%;
+}
+
+.navbar ul{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    /* padding: 0; */
+}
+
+.toggle{
+    display: none;
+}
+@media screen and (max-width:600px){
+    .toggle{
+        display:inline-block;
+    }
+    .navbar ul{
+        padding: 0;
+        background-color: silver;
+        transition: 0.5s;
+        left: 0;
+        top: -200%;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        display: inline-block;
+    }
+    .navbar ul li{
+        margin: 20px;
+    }
+    .navbar .sticky{
+        top: 0;
+    }
+
+}

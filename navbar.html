@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./navbar.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Web</div>
+        <div class="contents">
+            <button class="toggle menu" onclick="openTop(this)">=</button>
+            <ul>
+                <button class="toggle exit" onclick="openTop(this)">X</button>
+                <li><button>Home</button></li>
+                <li><button>contact</button></li>
+                <li><button>demo</button></li>
+                <li><button>memo</button></li>
+                <li><button>bye</button></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+    function openTop(e){
+        list = document.querySelector('.navbar ul');
+        list.classList.toggle('sticky');
+    }
+    </script>   
+</body>
+</html>
